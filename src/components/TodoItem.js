@@ -10,7 +10,7 @@ export class TodoItem extends Component {
             textDecoration: this.props.todo.completed ? 'line-through' : 'none'
         }
     }
-
+    
     render() {
         const { id, title } = this.props.todo;
         return (
@@ -41,4 +41,4 @@ const btnStyle = {
     float: 'right'
 }
 
-export default TodoItem
+export default TodoItem;

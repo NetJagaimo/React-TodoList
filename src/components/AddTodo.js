@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { addTodo } from '../actions';
 
 export class AddTodo extends Component {
     state = {
@@ -40,4 +42,4 @@ AddTodo.propTypes = {
     addTodo: PropTypes.func.isRequired
 }
 
-export default AddTodo
+export default connect(null, { addTodo })(AddTodo);
