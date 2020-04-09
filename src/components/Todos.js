@@ -19,7 +19,9 @@ class Todos extends Component {
 
 Todos.propTypes = {
   todos: PropTypes.array.isRequired,
-  getTodos: PropTypes.func.isRequired
+  getTodos: PropTypes.func.isRequired,
+  markComplete: PropTypes.func.isRequired,
+  delTodo: PropTypes.func.isRequired
 }
 
 const mapStateToProps = state => ({
